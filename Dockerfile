@@ -11,6 +11,6 @@ RUN cd /opt && wget https://github.com/amkozlov/raxml-ng/archive/refs/tags/1.2.2
     && tar -xvf 1.2.2.tar.gz \
     && raxml-ng-1.2.2 \
     && mkdir build && cd build \
-    && cmake -DUSE_MPI=ON ..
+    && cmake -DUSE_MPI=ON .. \
     && make \
     && make install
